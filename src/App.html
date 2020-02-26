@@ -163,6 +163,7 @@ export default {
       examples,
       hiddenExamples,
       svgPreview: null,
+      svgPreviews: [],
       numPoints: 1000,
       scale: 1,
       translateX: 20,
@@ -226,6 +227,9 @@ export default {
     //MAIN UPDATE METHOD CALLED WHENEVER A NEW SVG IS UPLOADED OR ANY CONTROLS ARE EDITED
     update () {
       let paths = this.refs.input.refs.svgHolder.getElementsByTagName('path');
+      // let paths = this.refs.input.refs.svgHolders.getElementsByTagName('path');
+      // let paths = this.get('svgPreviews');
+
       //check for error / missing svg
       if (paths.length === 0) {
         this.set({svgTextError: true});
