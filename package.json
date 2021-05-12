@@ -21,7 +21,7 @@
   },
   "dependencies": {
     "babel-core": "^6.26.0",
-    "codemirror": "^5.32.0",
+    "codemirror": "^5.58.2",
     "d3-array": "^1.2.1",
     "pathologist": "^0.1.9",
     "rollup-plugin-babel": "^3.0.2",
